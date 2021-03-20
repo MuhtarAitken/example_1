@@ -1,5 +1,7 @@
 .app-wrapper {
+    margin: 0 auto;
     display: grid;
+    width: 1200px;
     grid-template-areas:
           'h h'
           'n c';
@@ -10,23 +12,6 @@
     /*grip-gap: 10 px;*/
 }
 
-.header {
-    grid-area: h;
-    background-color: azure;
-}
-.header img {
-    width: 100px ;
-    padding-top: 10px;
-    padding-left: 40px;
 
-}
 
-.nav {
-    grid-area: n;
-    background-color: aliceblue;
-}
 
-.content {
-    grid-area: c;
-    background-color: coral;
-}
