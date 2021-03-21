@@ -12,6 +12,11 @@
     /*grip-gap: 10 px;*/
 }
 
+.app-wrapper-content {
+    grid-area: c;
+    background-color: coral;
+    height: 500px;
+}
 
 
 

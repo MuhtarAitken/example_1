@@ -1,0 +1,11 @@
+
+
+.item.gold {
+    color: gold;
+}
+
+.content {
+    grid-area: c;
+    background-color: coral;
+    height: 500px;
+}
