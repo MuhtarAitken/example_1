@@ -14,9 +14,9 @@ const MyPosts = () => {
                 </div>
                 <div className={s.myPosts}>
                   <div>
-                      <Posts />
-                      <Posts />
-                      <Posts />
+                      <Posts message='hi TOM '  name="Comp" />
+                      <Posts message='hi, how  are yoy' country="AStana" />
+                      <Posts message2="its my first message" />
                       <Posts />
                   </div>
                 </div>
