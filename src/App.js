@@ -9,16 +9,21 @@ import News from "./components/Navbar/News/News";
 import Setting from "./components/Navbar/Setting/Setting";
 
 import {BrowserRouter, Route} from "react-router-dom";
+import state from "./redux/state";
 
-const App = () => {
+const App = (props) => {
+
     return (
         <BrowserRouter>
         <div className='app-wrapper'>
             <Header/>
             <Navbar/>
             <div className='app-wrapper-content'>
-               <Route path='/dialogs' component={Dialogs}/>
-               <Route path='/profile' component={Profile}/>
+               <Route path='/dialogs' render={ () =><Dialogs
+                   state={props.state.dialogsPage}/>}/>
+
+               <Route path='/profile' render={ () => <Profile
+                   state={props.state.profilePage}/>}/>
                 <Route path='/Music' component={Music}/>
                 <Route path='/News' component={News}/>
                 <Route path='/Setting' component={Setting}/>
