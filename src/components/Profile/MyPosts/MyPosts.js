@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './MyPosts.module.css';
 import Posts from "./Post/Posts";
-import {ubdateNewPostText} from "../../../redux/state";
+
 
 const MyPosts = (props) => {
     let postsElement = props.posts.map(p => <Posts message={p.message} like={p.likesCount}/>)
