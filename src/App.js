@@ -9,7 +9,7 @@ import News from "./components/Navbar/News/News";
 import Setting from "./components/Navbar/Setting/Setting";
 
 import {BrowserRouter, Route} from "react-router-dom";
-import {ubdateNewPostText} from "./redux/state";
+
 
 
 const App = (props) => {
