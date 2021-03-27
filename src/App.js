@@ -9,7 +9,8 @@ import News from "./components/Navbar/News/News";
 import Setting from "./components/Navbar/Setting/Setting";
 
 import {BrowserRouter, Route} from "react-router-dom";
-import state from "./redux/state";
+import {ubdateNewPostText} from "./redux/state";
+
 
 const App = (props) => {
 
@@ -23,8 +24,12 @@ const App = (props) => {
                    state={props.state.dialogsPage}/>}/>
 
                <Route path='/profile' render={ () => <Profile
-                   state={props.state.profilePage}
-               addPost={props.addPost}/>}/>
+                   profilePage={props.state.profilePage}
+                    addPost={props.addPost}
+                   ubdateNewPostText={props.ubdateNewPostText}        />}/>
+
+
+
                 <Route path='/Music' component={Music}/>
                 <Route path='/News' component={News}/>
                 <Route path='/Setting' component={Setting}/>
